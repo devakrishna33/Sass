@@ -22,3 +22,24 @@
         margin-bottom: 30px;
     }
 }
+
+//Clearfix
+@mixin clearFix{
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+
+//Grid system
+@mixin grid($cols, $mag){
+    float: left;
+    width: ((100% - ($cols - 1)*$mag)/$cols);
+    margin-right: $mag;
+    margin-bottom: $mag;
+    &:nth-child(#{$cols}n){
+        margin-right: 0px;
+    }
+}

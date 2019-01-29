@@ -37,6 +37,8 @@ li {
     padding: 16px;
     display: block;
     text-align: center; }
+    #main-nav a:hover {
+      background: #333; }
 
 #main-nav ul:after {
   content: "";
